@@ -615,6 +615,7 @@ layout: two-cols-header
 | <span class="chip orange">**401**</span> | Unauthorized| La requête n'est pas autorisée (vous devez être authentifié) |
 | <span class="chip orange">**403**</span> | Forbidden| Vous n'avez pas les droits pour accéder à la ressource |
 | <span class="chip orange">**404**</span> | Not Found| La ressource demandée n'existe pas |
+| <span class="chip orange">**429**</span> | Too Many Requests| Trop de requêtes |
 
 </div>
 
@@ -661,7 +662,7 @@ layout: two-cols-header
 
 Liste de tous les codes d'état HTTP :
 
-<a href="https://developer.mozilla.org/fr/docs/Web/HTTP/Status" target="_blank">https://developer.mozilla.org/fr/docs/Web/HTTP/Status</a>
+https://developer.mozilla.org/fr/docs/Web/HTTP/Status
 
 </div>
 
