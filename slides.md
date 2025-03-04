@@ -6,7 +6,7 @@ theme: seriph
 # background: https://cover.sli.dev
 background: /api_back.png
 # some information about your slides (markdown enabled)
-title: Tuto Web
+title: Tuto Web API
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -25,7 +25,7 @@ transition: slide-left
 mdc: true
 ---
 
-<h1 class="glass_container blue">Comprendre le Web</h1>
+<h1 style="font-size: 50px;" class="glass_container blue">Comprendre le Web</h1>
 
 <h2 class="glass_container white">2- Fonctionnement d'une API</h2>
 
@@ -39,16 +39,15 @@ The last comment block of each slide will be treated as slide notes. It will be 
   backdrop-filter: blur(40px);
   border-radius: 20px;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 30px 30px;
   font-weight: bold;
+  width: fit-content;
+  /* font-size: 20px;  */
+  /* margin: 20px auto; */
 }
 
 .glass_container.blue {
-      background-color: #1b73babb;
+      background-color: #1b73ba99;
       /* border-top-right-radius: 0px; */
       padding: 30px 30px;
       font-weight: bold;
@@ -101,7 +100,9 @@ var ss = SpreadsheetApp.getActiveSpreadsheet();
 
 </div>
 
-<!--  Les APIs "Intégrées" sont généralement plus simples à mettre en place et à utiliser. -->
+<!--  Les APIs "Intégrées" sont généralement plus simples à mettre en place et à utiliser. 
+Les APIs REST sont universelles et peuvent être utilisées par n'importe quel service qui fait des requêtes HTTP.
+-->
 
 ---
 layout: two-cols
@@ -132,7 +133,7 @@ Nécessite d’installer une librairie spécifique selon le langage de programma
 
 ✅ Avantages
 
-Peut être utiliser par n’importe quel service qui fait des requêtes HTTP : Méthodes universelles
+Peut être utiliser par n’importe quel service qui fait des requêtes HTTP : Méthode universelle
 
 ❌ Inconvénients
 
@@ -167,14 +168,18 @@ sequenceDiagram
 Ces données sont plus faciles à lire et à analyser pour un programme et sont normalisées pour être utilisées par tous les langages de programmation.
 </div>
 
-<!--  La plupart des APIs REST renvoient des données au formatJSON. -->
+<!--  
+REST (Representational State Transfer) : un style d’architecture pour la conception d’API, décrivant comment les clients et les serveurs communiquent sur le Web.
+Stateless : chaque requête contient toutes les informations nécessaires pour être traitée. Le serveur ne conserve pas l’état de la session (pas de session côté serveur).
+Simplicité et évolutivité : l’API REST reste flexible, permet l’ajout de nouvelles ressources ou de nouvelles actions, et facilite la maintenance à long terme.
+La plupart des APIs REST renvoient des données au formatJSON. -->
 
 ---
 transition: slide-up
 ---
 
 # Comment se connecter à une API ?
-Une API Rest (HTTP) est un protocole qui fonctionne sur une architecture Client / Serveur.
+Une API Rest utilise le protocole HTTP pour communiquer entre le client et le serveur.
 
 L’objectif ? La plupart du temps pour faire du **CRUD**
 
