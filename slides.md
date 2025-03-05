@@ -27,7 +27,7 @@ mdc: true
 
 <h1 style="font-size: 50px;" class="glass_container blue">Comprendre le Web</h1>
 
-<h2 class="glass_container white">2- Fonctionnement d'une API</h2>
+<h2 class="glass_container white">02 Fonctionnement d'une API</h2>
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -133,7 +133,7 @@ Nécessite d’installer une librairie spécifique selon le langage de programma
 
 ✅ Avantages
 
-Peut être utiliser par n’importe quel service qui fait des requêtes HTTP : Méthode universelle
+Peut être utilisé par n’importe quel service qui fait des requêtes HTTP : Méthode universelle
 
 ❌ Inconvénients
 
